@@ -17,11 +17,12 @@
   <div ng-if="stateService.hasClaim('Application.Submit')">
     <main-top-nav-control></main-top-nav-control>
     <div ng-show="!stateService.applicationStarted()">
-      <button class="save-button"
-              onclick="window.location='#/section/assurances';">Start A New Application</button>
+      <a class="save-button usa-button" href="#!/section/assurances">Start A New Application</a>
+      <!-- <button class="save-button" onclick="window.location='/section/assurances';">Start A New Application</button> -->
     </div>
     <div ng-show="stateService.applicationStarted()">
-      <button class="save-button" onclick="window.location='#/section/assurances';">Continue Application</button>
+      <a class="save-button usa-button" href="#!/section/assurances">Continue Application</a>
+      <!-- <button class="save-button" onclick="window.location='#/section/assurances';">Continue Application</button> -->
     </div>
   </div>
 

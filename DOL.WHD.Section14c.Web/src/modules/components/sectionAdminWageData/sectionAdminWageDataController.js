@@ -1,8 +1,9 @@
 'use strict';
 
 module.exports = function(ngModule) {
-    ngModule.controller('sectionAdminWageDataController', function($scope, $location, _constants) {
+    ngModule.controller('sectionAdminWageDataController', function($scope, $location, _constants, stateService) {
         $scope.constants = _constants;
+        $scope.appData = stateService.appData;
 
         let query = $location.search();
 
